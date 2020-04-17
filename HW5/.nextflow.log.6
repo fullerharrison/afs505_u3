@@ -1,0 +1,40 @@
+Apr-16 20:06:21.666 [main] DEBUG nextflow.cli.Launcher - $> nextflow run tutorial.nf -resume
+Apr-16 20:06:21.815 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Apr-16 20:06:21.837 [main] INFO  nextflow.cli.CmdRun - Launching `tutorial.nf` [naughty_laplace] - revision: 5ffc840364
+Apr-16 20:06:21.971 [main] DEBUG nextflow.Session - Session uuid: ed3d8ee8-8dcd-4322-962b-2118b5e23a42
+Apr-16 20:06:21.971 [main] DEBUG nextflow.Session - Run name: naughty_laplace
+Apr-16 20:06:21.972 [main] DEBUG nextflow.Session - Executor pool size: 6
+Apr-16 20:06:22.311 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (02:14 PDT)
+  System: Mac OS X 10.15.4
+  Runtime: Groovy 2.5.8 on Java HotSpot(TM) 64-Bit Server VM 13.0.2+8
+  Encoding: UTF-8 (UTF-8)
+  Process: 15238@Harrisons-iMac.local [127.0.0.1]
+  CPUs: 6 - Mem: 8 GB (134.2 MB) - Swap: 5 GB (934.2 MB)
+Apr-16 20:06:22.344 [main] DEBUG nextflow.Session - Work-dir: /Users/harrison.fuller/afs505_u3/HW5/work [Mac OS X]
+Apr-16 20:06:22.344 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/harrison.fuller/afs505_u3/HW5/bin
+Apr-16 20:06:22.411 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Apr-16 20:06:22.414 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-16 20:06:22.737 [main] DEBUG nextflow.Session - Session start invoked
+Apr-16 20:06:23.563 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-16 20:06:23.591 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: convertToUpper, splitLetters
+Apr-16 20:06:23.649 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-16 20:06:23.649 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-16 20:06:23.655 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-16 20:06:23.687 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=6; memory=8 GB; capacity=6; pollInterval=100ms; dumpInterval=5m
+Apr-16 20:06:23.797 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > splitLetters -- maxForks: 6; blocking: false
+Apr-16 20:06:23.868 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-16 20:06:23.868 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-16 20:06:23.872 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > convertToUpper -- maxForks: 6; blocking: false
+Apr-16 20:06:23.915 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Apr-16 20:06:23.915 [main] DEBUG nextflow.Session - Session await
+Apr-16 20:06:24.200 [Actor Thread 3] INFO  nextflow.processor.TaskProcessor - [43/9a8906] Cached process > splitLetters
+Apr-16 20:06:24.279 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-16 20:06:24.285 [Task submitter] INFO  nextflow.Session - [bc/192b45] Submitted process > convertToUpper
+Apr-16 20:06:24.367 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: convertToUpper; status: COMPLETED; exit: 0; error: -; workDir: /Users/harrison.fuller/afs505_u3/HW5/work/bc/192b45331cd07c9c05ab5b00fb13aa]
+Apr-16 20:06:24.369 [main] DEBUG nextflow.Session - Session await > all process finished
+Apr-16 20:06:24.371 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-16 20:06:24.387 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=1; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=43ms; failedDuration=0ms; cachedDuration=25ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Apr-16 20:06:24.589 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Apr-16 20:06:24.607 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

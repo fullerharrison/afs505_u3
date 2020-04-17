@@ -1,0 +1,5 @@
+#!/bin/bash
+sample_dir=$1
+ILLUMINACLIP_PATH=/usr/local/bin/trimmomatic/adapters
+sample_names=`ls $sample_dir | sed -E 's/_[12]\.fastq//g' | sort -u `
+echo $sample_names

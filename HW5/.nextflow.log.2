@@ -1,0 +1,42 @@
+Apr-17 15:05:23.642 [main] DEBUG nextflow.cli.Launcher - $> nextflow run tutorial.nf --str 'Bonjou le monde' --with-report
+Apr-17 15:05:23.738 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.01.0
+Apr-17 15:05:23.762 [main] INFO  nextflow.cli.CmdRun - Launching `tutorial.nf` [lonely_lumiere] - revision: 5ffc840364
+Apr-17 15:05:23.850 [main] DEBUG nextflow.Session - Session uuid: 08cb8b9e-2409-4401-8c84-d97a5896fbcb
+Apr-17 15:05:23.850 [main] DEBUG nextflow.Session - Run name: lonely_lumiere
+Apr-17 15:05:23.851 [main] DEBUG nextflow.Session - Executor pool size: 6
+Apr-17 15:05:24.121 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.01.0 build 5264
+  Created: 12-02-2020 10:14 UTC (02:14 PDT)
+  System: Mac OS X 10.15.4
+  Runtime: Groovy 2.5.8 on Java HotSpot(TM) 64-Bit Server VM 13.0.2+8
+  Encoding: UTF-8 (UTF-8)
+  Process: 16506@Harrisons-iMac.local [127.0.0.1]
+  CPUs: 6 - Mem: 8 GB (56 MB) - Swap: 5 GB (1.7 GB)
+Apr-17 15:05:24.137 [main] DEBUG nextflow.Session - Work-dir: /Users/harrison.fuller/afs505_u3/HW5/work [Mac OS X]
+Apr-17 15:05:24.137 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/harrison.fuller/afs505_u3/HW5/bin
+Apr-17 15:05:24.233 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Apr-17 15:05:24.235 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-17 15:05:24.390 [main] DEBUG nextflow.Session - Session start invoked
+Apr-17 15:05:24.902 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-17 15:05:24.909 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: convertToUpper, splitLetters
+Apr-17 15:05:24.958 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-17 15:05:24.958 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-17 15:05:24.963 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-17 15:05:24.967 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=6; memory=8 GB; capacity=6; pollInterval=100ms; dumpInterval=5m
+Apr-17 15:05:25.053 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > splitLetters -- maxForks: 6; blocking: false
+Apr-17 15:05:25.092 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-17 15:05:25.092 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-17 15:05:25.097 [main] DEBUG nextflow.processor.TaskProcessor - Creating operator > convertToUpper -- maxForks: 6; blocking: false
+Apr-17 15:05:25.169 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Apr-17 15:05:25.169 [main] DEBUG nextflow.Session - Session await
+Apr-17 15:05:25.275 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-17 15:05:25.281 [Task submitter] INFO  nextflow.Session - [6b/3a7096] Submitted process > splitLetters
+Apr-17 15:05:25.331 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: splitLetters; status: COMPLETED; exit: 0; error: -; workDir: /Users/harrison.fuller/afs505_u3/HW5/work/6b/3a70966a8736a739c32ee33795e417]
+Apr-17 15:05:25.403 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-17 15:05:25.403 [Task submitter] INFO  nextflow.Session - [4c/2c621f] Submitted process > convertToUpper
+Apr-17 15:05:25.443 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: convertToUpper; status: COMPLETED; exit: 0; error: -; workDir: /Users/harrison.fuller/afs505_u3/HW5/work/4c/2c621f86453128305f363b88c19132]
+Apr-17 15:05:25.444 [main] DEBUG nextflow.Session - Session await > all process finished
+Apr-17 15:05:25.446 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-17 15:05:25.454 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=2; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=19ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Apr-17 15:05:25.632 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Apr-17 15:05:25.642 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

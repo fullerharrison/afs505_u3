@@ -1,0 +1,8 @@
+2020-04-16 19:46:20	3.4s	berserk_ramanujan	OK	e3b475a61b9515390d623fd0a0b52ffd	ed3d8ee8-8dcd-4322-962b-2118b5e23a42	nextflow run tutorial.nf
+2020-04-16 20:06:22	2.6s	naughty_laplace	OK	5ffc8403641e0376d466777539681f2e	ed3d8ee8-8dcd-4322-962b-2118b5e23a42	nextflow run tutorial.nf -resume
+2020-04-17 14:48:18	3.1s	friendly_lichterman	OK	5ffc8403641e0376d466777539681f2e	71979ae1-8ce5-47f3-b05d-79744713e401	nextflow tutorial.nf
+2020-04-17 14:52:36	3.1s	soggy_miescher	OK	5ffc8403641e0376d466777539681f2e	71979ae1-8ce5-47f3-b05d-79744713e401	nextflow run tutorial.nf -resume
+2020-04-17 14:57:17	1.9s	zen_darwin	OK	5ffc8403641e0376d466777539681f2e	e8194f3e-bf6f-4211-ba6b-1d23f6fee257	nextflow run tutorial.nf --str 'Bonjou le monde'
+2020-04-17 15:05:24	1.6s	lonely_lumiere	OK	5ffc8403641e0376d466777539681f2e	08cb8b9e-2409-4401-8c84-d97a5896fbcb	nextflow run tutorial.nf --str 'Bonjou le monde' --with-report
+2020-04-17 15:06:41	2s	marvelous_saha	OK	5ffc8403641e0376d466777539681f2e	91dc7910-2d42-491f-8093-5b1f84532081	nextflow run tutorial.nf --str 'Bonjou le monde' --with-report tutorial
+2020-04-17 15:07:28	3.1s	distraught_pesquet	OK	5ffc8403641e0376d466777539681f2e	02d4ad4a-06f8-40c4-bce8-39d395b6bffb	nextflow run tutorial.nf -with-report tutorial
